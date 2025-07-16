@@ -126,18 +126,13 @@ def time_stats(df):
         None.
     """
 
-    print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
     #Uses mode method to find the most popular month
     popular_month = df['month'].mode()[0]
 
-    print(f"Most Popular Month (1 = January,...,6 = June): {popular_month}")
-
     #Uses mode method to find the most popular day
     popular_day = df['day_of_week'].mode()[0]
-
-    print(f"\nMost Popular Day: {popular_day}")
 
     #Extract hour from the Start Time column to create an hour column
     df['hour'] = df['Start Time'].dt.hour
@@ -145,13 +140,9 @@ def time_stats(df):
     #Uses mode method to find the most popular hour
     popular_hour = df['hour'].mode()[0]
 
-    print(f"\nMost Popular Start Hour: {popular_hour}")
-
     #Prints the time taken to perform the calculation
     #You will find this in all the functions involving any calculation
     #throughout this program
-    print(f"\nThis took {(time.time() - start_time)} seconds.")
-    print('-'*80)
 
 #Function to calculate station related statistics
 def station_stats(df):
