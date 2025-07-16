@@ -3,7 +3,7 @@
 I just did the course to get familiar with the udacity tools and processes.
 
 ### Date created
-Include the date you created this project and README file.
+Wed Jul 16 16:03:28 CEST 2025
 
 ### Project Title
 Replace the Project Title
