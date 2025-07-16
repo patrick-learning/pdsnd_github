@@ -22,16 +22,11 @@ def get_filters():
         str (day): name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    #Initializing an empty city variable to store city choice from user
-    #You will see this repeat throughout the program
     city = ''
-    #Running this loop to ensure the correct user input gets selected else repeat
     while city not in CITY_DATA.keys():
         print("\nWelcome to this program. Please choose your city:")
         print("\n1. Chicago 2. New York City 3. Washington")
         print("\nAccepted input:\nFull name of city; not case sensitive (e.g. chicago or CHICAGO).\nFull name in title case (e.g. Chicago).")
-        #Taking user input and converting into lower to standardize them
-        #You will find this happening at every stage of input throughout this
         city = input().lower()
 
         if city not in CITY_DATA.keys():
@@ -40,7 +35,6 @@ def get_filters():
 
     print(f"\nYou have chosen {city.title()} as your city.")
 
-    #Creating a dictionary to store all the months including the 'all' option
     MONTH_DATA = {'january': 1, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6, 'all': 7}
     month = ''
     while month not in MONTH_DATA.keys():
@@ -55,7 +49,6 @@ def get_filters():
 
     print(f"\nYou have chosen {month.title()} as your month.")
 
-    #Creating a list to store all the days including the 'all' option
     DAY_LIST = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
     day = ''
     while day not in DAY_LIST:
@@ -71,7 +64,6 @@ def get_filters():
     print(f"\nYou have chosen {day.title()} as your day.")
     print(f"\nYou have chosen to view data for city: {city.upper()}, month/s: {month.upper()} and day/s: {day.upper()}.")
     print('-'*80)
-    #Returning the city, month and day selections
     return city, month, day
 
 #Function to load data from .csv files
