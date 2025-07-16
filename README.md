@@ -1,5 +1,7 @@
 # Udacity Version Control Course
 
+I just did the course to get familiar with the udacity tools and processes.
+
 ### Date created
 Include the date you created this project and README file.
 
