@@ -2,18 +2,17 @@
 
 I just did the course to get familiar with the udacity tools and processes.
 
-### Date created
+## Date created
+
 Wed Jul 16 16:03:28 CEST 2025
 
-### Project Title
-Replace the Project Title
+## Version Control Course Training
 
 ### Description
-Describe what your project is about and what it does
+
+This is just a small/useless github project for learning [git](https://git-scm.com/) and [GitHub](https://pages.github.com/).
 
 ### Files used
-Include the files used
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+- `bikeshare.py`
+- `.gitignore` (ofcourse) 
